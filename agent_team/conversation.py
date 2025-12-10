@@ -40,20 +40,18 @@ async def call_agent_async(query: str, runner, user_id, session_id):
 
 # We need an async function to await our interaction helper
 async def run_conversation():
-    await call_agent_async("What is the weather like in London?",
-                                       runner=runner,
-                                       user_id=USER_ID,
-                                       session_id=SESSION_ID)
-
-    await call_agent_async("How about Paris?",
-                                       runner=runner,
-                                       user_id=USER_ID,
-                                       session_id=SESSION_ID) # Expecting the tool's error message
-
-    await call_agent_async("Tell me the weather in New York",
-                                       runner=runner,
-                                       user_id=USER_ID,
-                                       session_id=SESSION_ID)
+    await call_agent_async(query = "Hello there!",
+                            runner=runner,
+                            user_id=USER_ID,
+                            session_id=SESSION_ID)
+    await call_agent_async(query = "What is the weather in New York?",
+                            runner=runner,
+                            user_id=USER_ID,
+                            session_id=SESSION_ID)
+    await call_agent_async(query = "Thanks, bye!",
+                            runner=runner,
+                            user_id=USER_ID,
+                            session_id=SESSION_ID)
 
 
 

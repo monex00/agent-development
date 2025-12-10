@@ -1,7 +1,7 @@
 from google.adk.sessions import InMemorySessionService
 from google.adk.runners import Runner
 import asyncio
-from agent import weather_agent
+from agents import weather_agent
 
 # --- Session Management ---
 # Key Concept: SessionService stores conversation history & state.

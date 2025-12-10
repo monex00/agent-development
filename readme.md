@@ -13,9 +13,13 @@ The project currently contains the following agent implementations:
 │   ├── .env
 │   └── agent.py
 ├── agent_team/         # Agent team implementation with runner and session management
+│   ├── agents/         # Agent definitions
+│   │   ├── __init__.py
+│   │   ├── constants.py
+│   │   ├── greeting_farewell.py
+│   │   └── root.py
 │   ├── __init__.py
 │   ├── .env
-│   ├── agent.py
 │   ├── conversation.py
 │   └── setup.py
 ├── .gitignore
