@@ -22,6 +22,10 @@ The project currently contains the following agent implementations:
 │   ├── .env
 │   ├── conversation.py
 │   └── setup.py
+├── loop_agent/         # Loop agent implementation for document scanning
+│   ├── __init__.py
+│   ├── .env
+│   └── agent.py
 ├── .gitignore
 └── readme.md
 ```
